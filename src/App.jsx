@@ -21,7 +21,7 @@ const PublicRoute = ({ children }) => {
 
 const HomeRedirect = () => {
   const { currentUser } = useAuth();
-  return currentUser ? <Navigate to="/events" /> : <Navigate to="/download" />;
+  return currentUser ? <Navigate to="/events" /> : <Navigate to="/login" />;
 };
 
 import { ToastProvider } from './context/ToastContext';
