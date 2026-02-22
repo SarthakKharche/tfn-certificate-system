@@ -76,7 +76,7 @@ const Navbar = () => {
                 </button>
             </nav>
 
-            {activeEventName && !['/download', '/verify'].includes(location.pathname) && (
+            {activeEventName && !['/download', '/verify', '/login'].includes(location.pathname) && (
                 <div className="active-event-banner">
                     <Calendar size={18} />
                     <span className="event-label">Active Event:</span>
